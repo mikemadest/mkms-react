@@ -1,0 +1,241 @@
+/* ==================================================================
+
+*   Mkms Media Queries
+*   19-06-2018
+
+/* ================================================================== */
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+
+@media (max-width: 1280px) {
+  /* Porfolio section
+    -------------------------------------------------------------------- */
+  article,
+  .smaller-article-row article {
+    margin-bottom: 3rem;
+  }
+  article h3,
+  article .content {
+    padding-left: 0;
+  }
+
+  .smaller-article-row article h3 {
+    padding: 16px 0 0 0;
+  }
+
+  article .illustration {
+    margin-top: 2rem;
+  }
+
+  .smaller-article-row .illustration {
+    margin-bottom: 0;
+  }
+
+  .smaller-article-row article {
+    margin-bottom: 1rem;
+    flex-basis: 48%;
+    margin-right: 0;
+  }
+
+  h4:before,
+  h3:before {
+    font-size: 14px;
+    margin: 0 10px 0 0;
+  }
+
+  body {
+    font-size: 55%;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.3rem;
+  }
+  li,
+  p,
+  a {
+    font-size: 1.2rem;
+  }
+
+  #about > p {
+    font-size: 1.4rem;
+  }
+
+  #about li p {
+    font-size: 1.2rem;
+  }
+
+  #recent-work .work-container {
+    flex-flow: column;
+  }
+
+  article {
+    display: inline-block;
+    flex-basis: auto;
+    margin: 3rem 0;
+  }
+}
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  /* General styles
+    -------------------------------------------------------------------- */
+  section {
+    padding: 24px 0;
+  }
+
+  /* Main image banner
+    -------------------------------------------------------------------- */
+  #big-banner div h1 {
+    font-size: 3rem;
+  }
+
+  /* About Section
+    -------------------------------------------------------------------- */
+  #about ul {
+    display: block;
+  }
+  #about li {
+    padding: 0.8rem 0;
+  }
+
+  #about > p {
+    margin-bottom: 1rem;
+  }
+
+  /* Porfolio section
+    -------------------------------------------------------------------- */
+
+  .smaller-article-row {
+    display: block;
+  }
+
+  .smaller-article-row article,
+  article {
+    grid-template-areas:
+      'title'
+      'picture'
+      'detail';
+    margin-bottom: 5rem;
+  }
+
+  .smaller-article-row article h3,
+  article h3 {
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  article .illustration {
+    margin-top: 0;
+  }
+  article .content {
+    padding-left: 0;
+  }
+
+  .smaller-article-row article {
+    flex-basis: auto;
+  }
+
+  .smaller-article-row .illustration {
+    margin-bottom: 0;
+    max-height: 400px;
+  }
+}
+
+/* screenwidth less than 800px
+    --------------------------------------------------------------------- */
+
+@media (max-width: 800px) {
+  /* General styles
+    -------------------------------------------------------------------- */
+  body {
+    font-size: 50%;
+    line-height: 140%;
+  }
+
+  h4:before,
+  h3:before {
+    font-size: 14px;
+    margin: -2px 12px 0 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 2rem 0;
+    margin: 0 5% 24px 5%;
+  }
+
+  /* Header Styles
+    -------------------------------------------------------------------- */
+  header {
+    flex-flow: row wrap;
+  }
+  .basename {
+    font-size: 1rem;
+  }
+  header nav {
+    padding: 0;
+  }
+  nav li {
+    padding: 0 1rem 0 0;
+  }
+
+  /* About Section
+    -------------------------------------------------------------------- */
+  #about {
+    margin-bottom: 0;
+  }
+  #about > p {
+    font-size: 1.5rem;
+  }
+
+  /* Porfolio Section
+    -------------------------------------------------------------------- */
+
+  article {
+    margin: 2rem 0 5rem 0;
+  }
+
+  article:last-child {
+    margin-bottom: 0;
+  }
+
+  article .content {
+    padding: 0;
+  }
+
+  article ul {
+    padding: 0 0 0 1.4rem;
+  }
+  article li:before {
+    font-size: 1rem;
+    margin: 0 0.5rem 0 -1.55rem;
+  }
+
+  .see-more {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  #big-banner {
+    background-attachment: scroll !important;
+  }
+}
+
+@media (max-width: 600px) {
+  #big-banner div h1 {
+    font-size: 1.8rem;
+  }
+}

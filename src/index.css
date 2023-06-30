@@ -1,0 +1,507 @@
+/*
+=====================================================================
+*   MKMS theme v2.1.0
+*   created: 19-06-2018
+*   updated: 30-06-2023
+=====================================================================
+
+   TOC:
+   a. General Styles
+   b. Header Styles + navigation
+   c. Footer Styles
+   d. Main image banner
+   e. About
+   f. Porfolio 
+   g. Language Selector
+
+===================================================================== */
+
+/* ------------------------------------------------------------------ */
+/* a. General Styles
+/* ------------------------------------------------------------------ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 62.5%;
+  line-height: 165%;
+  color: #212121;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+li,
+p,
+a {
+  color: #212121;
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 130%;
+}
+a:hover {
+  color: #deb332;
+}
+
+h4,
+h3,
+h2,
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/**
+ * Grreater title
+ */
+h2 {
+  font-size: 2rem;
+  color: #ecb231;
+}
+
+/**
+ * Common title
+ */
+h3,
+h4 {
+  color: #ecb231;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s linear;
+  white-space: nowrap;
+}
+
+h3 svg,
+h4 svg {
+  position: relative;
+  opacity: 0;
+  left: -150px;
+  font-size: 16px;
+  font-weight: 900;
+  margin: 0 14px 0 0;
+  vertical-align: middle;
+  color: #ecb231;
+}
+
+.scrolled h3,
+.scrolled h4 {
+  color: #212121;
+}
+
+.scrolled h3 svg,
+.scrolled h4 svg {
+  opacity: 1;
+  left: 0px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.highlight-features,
+.highlight-features a {
+  color: #ecb231;
+  text-decoration: none;
+}
+
+.highlight-features a:hover {
+  text-decoration: underline;
+}
+
+.special-dot {
+  font-size: 18px;
+  margin: 0 16px 0 0;
+  vertical-align: middle;
+  color: #ecb231;
+}
+
+#body-wrapper {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 8% 24px 8%;
+  background: #fff;
+}
+
+section {
+  padding: 24px;
+  margin: 0 5% 24px 5%;
+}
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles + navigation
+/* ------------------------------------------------------------------ */
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1.2rem 4%;
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.6s ease;
+}
+
+header.scrolled {
+  left: 2.5%;
+  width: 95%;
+  margin: 0.8rem 0 0 0;
+  background: #333;
+  padding: 0.4rem 2%;
+  border-radius: 10px;
+}
+
+.basename {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav,
+header p {
+  display: inline-block;
+}
+
+header nav {
+  padding: 6px 0;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0 1.1rem;
+}
+
+nav li:first-child {
+  padding-left: 0;
+}
+nav li:last-child {
+  padding-right: 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+nav .menu-item {
+}
+nav .menu-item svg {
+  margin-right: 5px;
+}
+
+.language-selector {
+  transform: none;
+  position: relative;
+  top: auto;
+  float: none;
+  display: inline-block;
+  margin-right: 0 !important;
+  padding: 0;
+  vertical-align: text-bottom;
+}
+
+/* ------------------------------------------------------------------ */
+/* c. Footer Styles
+/* ------------------------------------------------------------------ */
+
+footer {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: 36px 4%;
+  overflow: hidden;
+  background: #ecb231;
+  text-align: center;
+}
+
+footer p {
+  padding: 6px 16px;
+  color: #212121;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer a {
+  color: #212121;
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. Main image banner
+/* ------------------------------------------------------------------ */
+
+#big-banner {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: center / cover no-repeat url('assets/banner-background.jpg');
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: hidden;
+}
+
+#big-banner div.banner-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  padding: 24px;
+  text-align: center;
+}
+
+#big-banner div.banner-content div {
+  width: 100%;
+}
+
+#big-banner div h1 {
+  padding: 0;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  line-height: 1;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+#big-banner div p {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 160%;
+}
+
+/* ------------------------------------------------------------------ */
+/* e. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+  margin-bottom: 36px;
+  padding-top: 3rem;
+}
+
+#about > p {
+  padding: 24px 0;
+  font-size: 1.5rem;
+  line-height: 150%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#about > p strong {
+  color: #ecb231;
+}
+
+/**
+ * Skills
+ */
+
+#about ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+#about li {
+  align-self: start;
+  flex-basis: 15%;
+  margin-top: 2rem;
+  padding: 0;
+  text-align: center;
+}
+
+#about li:first-child {
+  margin-left: 0;
+}
+#about li:last-child {
+  margin-right: 0;
+}
+
+#about li p {
+  margin: 0;
+  padding: 0.8rem 0;
+  font-size: 1.3rem;
+  line-height: 140%;
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Porfolio Section
+/* ------------------------------------------------------------------ */
+
+#recent-work .work-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-items: center;
+  justify-content: space-between;
+  align-content: space-around;
+}
+
+article {
+  display: inline-block;
+  flex-basis: 48%;
+  margin: 3rem 0;
+}
+
+article h3 {
+  padding: 2rem 0 0 0;
+}
+
+article .illustration {
+  overflow: hidden;
+}
+
+article .content {
+  padding: 0;
+}
+
+article .content p {
+  margin: 24px 0;
+}
+
+article ul {
+  list-style-type: none;
+  padding-left: 2.05rem;
+}
+article li {
+  margin-bottom: 1.2rem;
+}
+
+article li svg {
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0 0.6rem 0 -2.1rem;
+  color: #ecb231;
+}
+
+/**
+ * Older works
+ */
+
+.smaller-article-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.smaller-article-row article {
+  align-self: start;
+  flex-basis: 30%;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+.smaller-article-row article h3 {
+  padding: 0;
+}
+
+.smaller-article-row .illustration {
+  max-height: 240px;
+  margin-bottom: 2rem;
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+}
+
+.smaller-article-row .illustration a {
+  display: block;
+  height: 250px;
+}
+
+.smaller-article-row .illustration img {
+  display: none;
+}
+
+.smaller-article-row .content {
+  padding: 0;
+}
+
+.see-more {
+  display: inline-block;
+  clear: both;
+  text-align: left;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.3rem;
+  font-weight: normal;
+  text-decoration: none;
+  background: #ecb231;
+  color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  padding: 10px 16px;
+  text-align: center;
+  width: 11rem;
+}
+.see-more:hover {
+  background: #ffbd45;
+  color: #fff;
+}
+
+h3 .see-more {
+  margin-left: 1.5rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* g. Language Selector
+/* ------------------------------------------------------------------ */
+
+.language-selector {
+  text-align: center;
+}
+
+.language-selector svg {
+  color: white;
+  margin-right: 5px;
+}
+
+.language-selector a {
+  line-height: 100%;
+}
