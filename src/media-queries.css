@@ -126,6 +126,7 @@
   article h3 {
     padding-left: 0;
     padding-bottom: 1.5rem;
+    text-wrap: wrap;
   }
 
   article .illustration {

@@ -112,6 +112,7 @@ h4 svg {
   left: 0px;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
     -webkit-transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition-delay: 250ms;
 }
 
 .highlight-features,
@@ -268,7 +269,7 @@ footer a {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background: center / cover no-repeat url('assets/banner-background.jpg');
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -320,15 +321,15 @@ footer a {
 /* ------------------------------------------------------------------ */
 
 #about {
-  margin-bottom: 36px;
+  margin-bottom: 3rem;
   padding-top: 3rem;
 }
 
 #about > p {
-  padding: 24px 0;
+  padding: 0 0;
   font-size: 1.5rem;
   line-height: 150%;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -352,7 +353,7 @@ footer a {
 #about li {
   align-self: start;
   flex-basis: 15%;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   padding: 0;
   text-align: center;
 }

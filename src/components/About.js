@@ -1,18 +1,24 @@
 import {useState} from 'react';
-import {FormattedMessage} from 'react-intl';
+import {FormattedMessage, useIntl} from 'react-intl';
 import {Waypoint} from 'react-waypoint';
-import {skills} from '../config';
+import getTranslations from '../config';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSquare} from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const {locale} = useIntl();
+  const {skills} = getTranslations(locale);
 
   return (
     <section id="about">
       <p className="about-content">
-        <strong>Javascript, PHP developer</strong> and project manager. Creator of housing
-        configurators, real estate ERP, CRM and WebGL viewers. Expertise on fronts, backs and API.
+        <FormattedMessage
+          id="mkms.nav.about.content"
+          values={{
+            b: chunks => <strong>{chunks}</strong>,
+          }}
+        />
       </p>
 
       <Waypoint
@@ -25,15 +31,13 @@ const About = () => {
       >
         <aside id="skills" className={isScrolled ? 'scrolled' : ''}>
           <ul>
-            {skills.map(([skillTitleId, skillDescriptionId]) => (
-              <li key={skillTitleId}>
+            {skills.map(([skillTitle, skillDescription]) => (
+              <li key={skillTitle}>
                 <h4>
                   <FontAwesomeIcon icon={faSquare} />
-                  <FormattedMessage id={skillTitleId} />
+                  {skillTitle}
                 </h4>
-                <p>
-                  <FormattedMessage id={skillDescriptionId} />
-                </p>
+                <p>{skillDescription}</p>
               </li>
             ))}
           </ul>
