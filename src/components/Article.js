@@ -9,7 +9,7 @@ const Article = props => {
   const [isScrolled, setIsScrolled] = useState(false);
   const {title, image, href, description, tags, points, buttonLabel, isSmall} = props;
 
-  const styles = isSmall ? {background: `url(${image})`} : {};
+  const styles = isSmall ? {backgroundImage: `url(${image})`} : {};
   return (
     <article className={isScrolled ? 'scrolled' : ''}>
       <div className="illustration" style={styles}>

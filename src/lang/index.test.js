@@ -10,7 +10,7 @@ describe('translation files should be correct', () => {
     expect(englishKeys.length).toEqual(frenchKeys.length);
   });
   it('contain the same keys', () => {
-    expect(englishKeys).toEqual(spanishKeys);
+    expect(englishKeys).toEqual(frenchKeys);
   });
   it('return empty object for bad locale', () => {
     expect(getTranslations('jp')).toEqual({});

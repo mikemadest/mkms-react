@@ -37,7 +37,7 @@ const mediumArticles = [
   {
     title: 'The 4 stages of flakiness',
     presentation:
-      'Presentation of our issues with flakiness in unit tests (React Testing Library, Jest, Jenkins), our investigation results and solutions',
+      'Presentation of our issues with flakiness in unit tests (React Testing Library, Jest, Jenkins), our investigation results and solutions.',
     href: 'https://medium.com/hmh-engineering/the-4-stages-of-flakiness-part-1-3-denial-anger-depression-and-acceptance-43b2496cab22',
     linkA11y: 'View Medium article on unit tests flakiness',
     linkLabel: 'View article',
@@ -50,7 +50,7 @@ const mediumArticles = [
   {
     title: 'Using LinkeDOM as test environment',
     presentation:
-      'This article explore my investigation trying to replace JSDOM by LinkeDOM, what I could make work, when I decided to stop.',
+      'This article present a part of my investigation trying to replace JSDOM by LinkeDOM and in particular a virtual machine bug.',
     href: 'https://medium.com/hmh-engineering/using-linkedom-as-test-environment-in-jest-unit-tests-ec4a7659c8d6',
     linkA11y: 'View Medium article on LinkeDOM',
     linkLabel: 'View article',
@@ -64,8 +64,7 @@ const mediumArticles = [
 const recentWorks = [
   {
     title: 'HMHCO solution',
-    presentation:
-      'widely-used learning solutions used by millions of users. More details on their website.',
+    presentation: 'Widely-used learning solutions with millions of users in the US.',
     href: 'https://www.hmhco.com/',
     linkA11y: 'View HMH website',
     linkLabel: 'HMH solutions',
