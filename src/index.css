@@ -353,7 +353,6 @@ footer a {
 #about li {
   align-self: start;
   flex-basis: 15%;
-  /* margin-top: 2rem; */
   padding: 0;
   text-align: center;
 }
@@ -376,7 +375,7 @@ footer a {
 /* f. Porfolio Section
 /* ------------------------------------------------------------------ */
 
-#recent-work .work-container {
+.normal-row {
   display: flex;
   flex-flow: row wrap;
   justify-items: center;
@@ -425,25 +424,25 @@ article li svg {
  * Older works
  */
 
-.smaller-article-row {
+.small-row {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   width: 100%;
 }
 
-.smaller-article-row article {
+.small-row article {
   align-self: start;
   flex-basis: 30%;
   margin-right: 0;
   margin-bottom: 0;
 }
 
-.smaller-article-row article h3 {
+.small-row article h3 {
   padding: 0;
 }
 
-.smaller-article-row .illustration {
+.small-row .illustration {
   max-height: 240px;
   margin-bottom: 2rem;
   height: 250px;
@@ -451,16 +450,16 @@ article li svg {
   background-size: cover;
 }
 
-.smaller-article-row .illustration a {
+.small-row .illustration a {
   display: block;
   height: 250px;
 }
 
-.smaller-article-row .illustration img {
+.small-row .illustration img {
   display: none;
 }
 
-.smaller-article-row .content {
+.small-row .content {
   padding: 0;
 }
 

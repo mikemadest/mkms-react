@@ -12,7 +12,7 @@
   /* Porfolio section
     -------------------------------------------------------------------- */
   article,
-  .smaller-article-row article {
+  .small-row article {
     margin-bottom: 3rem;
   }
   article h3,
@@ -20,7 +20,7 @@
     padding-left: 0;
   }
 
-  .smaller-article-row article h3 {
+  .small-row article h3 {
     padding: 16px 0 0 0;
   }
 
@@ -28,11 +28,11 @@
     margin-top: 2rem;
   }
 
-  .smaller-article-row .illustration {
+  .small-row .illustration {
     margin-bottom: 0;
   }
 
-  .smaller-article-row article {
+  .small-row article {
     margin-bottom: 1rem;
     flex-basis: 48%;
     margin-right: 0;
@@ -66,7 +66,7 @@
     font-size: 1.2rem;
   }
 
-  #recent-work .work-container {
+  .normal-row {
     flex-flow: column;
   }
 
@@ -109,11 +109,7 @@
   /* Porfolio section
     -------------------------------------------------------------------- */
 
-  .smaller-article-row {
-    display: block;
-  }
-
-  .smaller-article-row article,
+  .small-row article,
   article {
     grid-template-areas:
       'title'
@@ -122,7 +118,7 @@
     margin-bottom: 5rem;
   }
 
-  .smaller-article-row article h3,
+  .small-row article h3,
   article h3 {
     padding-left: 0;
     padding-bottom: 1.5rem;
@@ -136,11 +132,7 @@
     padding-left: 0;
   }
 
-  .smaller-article-row article {
-    flex-basis: auto;
-  }
-
-  .smaller-article-row .illustration {
+  .small-row .illustration {
     margin-bottom: 0;
     max-height: 400px;
   }
@@ -226,6 +218,13 @@
 
   .see-more {
     font-size: 1.3rem;
+  }
+
+  .small-row {
+    flex-direction: column;
+  }
+  .small-row article {
+    flex-basis: auto;
   }
 }
 

@@ -1,9 +1,9 @@
-import {IntlProvider, FormattedMessage, useIntl} from 'react-intl';
+import {IntlProvider, useIntl} from 'react-intl';
 import getTranslations from './lang';
 import getContents from './config';
 import PageHeader from './components/PageHeader';
 import BigBanner from './components/BigBanner';
-import Article from './components/Article';
+import Section from './components/Section';
 import About from './components/About';
 import Footer from './components/Footer';
 
@@ -16,76 +16,9 @@ function App() {
       <BigBanner />
       <About />
 
-      <section id="recent-work" className="work-articles">
-        <h2>
-          <FormattedMessage id="mkms.nav.mediumArticles" />
-        </h2>
-
-        <div className="work-container">
-          {mediumArticles.map(article => {
-            const points = article.points.split('|');
-            return (
-              <Article
-                key={article.title}
-                title={article.title}
-                image={article.smallImage}
-                href={article.href}
-                description={article.presentation}
-                tags={article.tags}
-                points={points}
-                buttonLabel={article.linkLabel}
-              />
-            );
-          })}
-        </div>
-      </section>
-
-      <section id="recent-work" className="work-articles">
-        <h2>
-          <FormattedMessage id="mkms.nav.recentwork" />
-        </h2>
-
-        <div className="work-container">
-          {recentWorks.map(article => {
-            const points = article.points.split('|');
-            return (
-              <Article
-                key={article.title}
-                title={article.title}
-                image={article.smallImage}
-                href={article.href}
-                description={article.presentation}
-                tags={article.tags}
-                points={points}
-                buttonLabel={article.linkLabel}
-              />
-            );
-          })}
-        </div>
-      </section>
-
-      <section id="older-work" className="work-articles">
-        <h2>
-          <FormattedMessage id="mkms.section.moreProjects" />
-        </h2>
-
-        <div className="smaller-article-row">
-          {olderWorks.map(article => {
-            return (
-              <Article
-                isSmall
-                key={article.title}
-                title={article.title}
-                image={article.smallImage}
-                href={article.href}
-                description={article.presentation}
-                tags={article.tags}
-                buttonLabel={article.linkLabel}
-              />
-            );
-          })}
-        </div>
-      </section>
+      <Section id="medium-articles" items={mediumArticles} titleId="mkms.nav.mediumArticles" />
+      <Section id="recent-work" items={recentWorks} titleId="mkms.nav.recentwork" />
+      <Section id="older-work" items={olderWorks} titleId="mkms.section.moreProjects" isSmall />
 
       <Footer />
     </>

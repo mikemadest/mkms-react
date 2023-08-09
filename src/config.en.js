@@ -36,80 +36,88 @@ const skills = [
 const mediumArticles = [
   {
     title: 'The 4 stages of flakiness',
-    presentation:
+    description:
       'Presentation of our issues with flakiness in unit tests (React Testing Library, Jest, Jenkins), our investigation results and solutions.',
     href: 'https://medium.com/hmh-engineering/the-4-stages-of-flakiness-part-1-3-denial-anger-depression-and-acceptance-43b2496cab22',
-    linkA11y: 'View Medium article on unit tests flakiness',
+    imageAlt:
+      'Illustration for Medium article on unit tests flakiness showing a giant hand grabbing a bridge',
     linkLabel: 'View article',
     tags: '#Jest #ReactJS #Jenkins #NodeJS #ReactTestingLibrary',
     points:
       'created documentation to help developers|Created a custom Jest reporter|Jenkins script to rerun failed tests',
-    smallImage: flakinessArticleImage,
+    image: flakinessArticleImage,
   },
 
   {
     title: 'Using LinkeDOM as test environment',
-    presentation:
+    description:
       'This article present a part of my investigation trying to replace JSDOM by LinkeDOM and in particular a virtual machine bug.',
     href: 'https://medium.com/hmh-engineering/using-linkedom-as-test-environment-in-jest-unit-tests-ec4a7659c8d6',
-    linkA11y: 'View Medium article on LinkeDOM',
+    imageAlt:
+      'Illustration for Medium article on LinkeDOM showing a wooden astronaut surrounded by nature',
     linkLabel: 'View article',
     tags: '#Jest #JSDOM #LinkeDOM #NodeJS #ReactTestingLibrary',
     points:
       'setting realistic goals for a spike|investigating complex issues|making pull request for LinkeDOM and NodeJS',
-    smallImage: linkedomArticleImage,
+    image: linkedomArticleImage,
   },
 ];
 
 const recentWorks = [
   {
     title: 'HMHCO solution',
-    presentation: 'Widely-used learning solutions with millions of users in the US.',
+    description: 'Widely-used learning solutions with millions of users in the US.',
     href: 'https://www.hmhco.com/',
-    linkA11y: 'View HMH website',
+    imageAlt: 'Image showing HMH website structure',
     linkLabel: 'HMH solutions',
     tags: '#ReactJs #ES6 #Jenkins #NodeJS #MaterialUI #Codecept #singleSPA #Lerna',
     points:
       'Migrated angular 1.x applications to React|Created ReactJS applications and components in monorepo|Active code reviewer|Proposed and develop solutions for improving tests stability|Ensured compliance with accessibility requirements (WCAG 2.1 AA)',
-    smallImage: hmhcoImage,
+    image: hmhcoImage,
   },
 
   {
     title: 'ExpoJS',
-    presentation:
+    description:
       'ExpoJS is a docs generator and UI. It shows exported content like constants and functions and present packages in a searchable interface.',
     tags: '#ReactJs #ES6 #Concourse #NodeJS #MaterialUI',
+    imageAlt: 'screenshot of the ExpoJS dashboard, showing package cards, navigation and search',
     points:
       'Use Babel parser to analyse JS content|take 7 seconds to scans more than 150 packages|Build documentation|Link to github sources and commits|Suggestions for Package improvements|Hackathon project',
-    smallImage: expoJSImage,
+    image: expoJSImage,
   },
 
   {
     title: 'Housing configurator',
-    presentation:
+    description:
       'Shop for floor covering, cupboard choice, bathroom decoration and other options for your housing and get a real time preview of your choices.',
     tags: '#PHP #ZendFramework2 #ThreeJS #Javascript #ProjectManager #Webservice',
     points:
       'Proposed and implemented php code architecture, model, coding|Created 360° viewer and ThreeJS/WebGL components for real time rendering|Recognized efficiency, quality control and management of the team|Managed massive gain in media processing with automation scripts|Created a how-to manual, handled junior training',
-    smallImage: workConfiguratorImage,
+    image: workConfiguratorImage,
+    imageAlt:
+      'animated gif showing a room in 360 view with a user changing the floor covering in real time',
   },
   {
     title: 'Player 3d',
-    presentation:
+    description:
       'Javascript viewer mixing real time and pre-rendered scene. Mission was to improve loading time and performances.',
     tags: '#WebGL #ThreeJS #Javascript',
     points:
       '80% faster display and ready for interaction|More responsive control and reworked inertia simulation|Improved code readability, refactored into 4 smaller single purpose classes|Gave autonomy to the teams using it with extensive API documentation, examples and test cases',
-    smallImage: workPlayerImage,
+    image: workPlayerImage,
+    imageAlt:
+      'animated gif showing a building surrounded by snow rotating and user hovering accomodations active zones, revealing details on them',
   },
 ];
 
 const olderWorks = [
   {
     title: 'Immodesk',
-    presentation: 'A real estate ERP with CRM module, calendar tool, chat and highly customizable.',
+    description: 'A real estate ERP with CRM module, calendar tool, chat and highly customizable.',
     tags: '#PHP #Mysql #ZendFramework #Javascript #Bootstrap #ProjectManager',
-    smallImage: immodeskImage,
+    image: immodeskImage,
+    imageAlt: 'image showing immodesk dashboard',
   },
 
   {
@@ -117,9 +125,10 @@ const olderWorks = [
     linkLabel: 'Play',
     href: 'http://mkms.fr/witch-journey/',
     linkA11y: 'Play the game',
-    presentation: 'Experiment creating a zelda type game using Phaser.',
+    description: 'Experiment creating a zelda type game using Phaser.',
     tags: '#Javascript #ES6 #Webpack #Phaser3 #Game',
-    smallImage: witchImage,
+    image: witchImage,
+    imageAlt: 'screenshot of the game, showing characters in a retro Zelda style village',
   },
 
   {
@@ -127,9 +136,10 @@ const olderWorks = [
     linkLabel: 'View project sources',
     href: 'https://github.com/mikemadest/a-witch-s-journey',
     linkA11y: 'View game Github repository',
-    presentation: 'HTML5 game sources and project management',
+    description: 'HTML5 game sources and project management',
     tags: '#Javascript #ES6 #Git',
-    smallImage: githubImage,
+    image: githubImage,
+    imageAlt: 'Screenshot of a github page',
   },
 
   {
@@ -137,9 +147,11 @@ const olderWorks = [
     linkLabel: 'Website',
     href: 'https://www.codewars.com',
     linkA11y: 'View Codewars website',
-    presentation: 'Improving skills and playing with algorithm.',
+    description: 'Improving skills and playing with algorithm.',
     tags: '#Javascript #ES6',
-    smallImage: codewarsImage,
+    image: codewarsImage,
+    imageAlt:
+      'Screenshot of a page of Codewars, a website where people can work on interesting development "puzzles"',
   },
 
   {
@@ -147,23 +159,25 @@ const olderWorks = [
     linkLabel: 'Full size',
     bigImage: blenderImage,
     linkA11y: 'View bigger blender image',
-    presentation: 'Learning 3d modeling and creating real time demo with ThreeJS.',
+    description: 'Learning 3d modeling and creating real time demo with ThreeJS.',
     tags: '#Javascript #ThreeJS #Blender #Adaptability',
-    smallImage: blenderImage,
+    image: blenderImage,
+    imageAlt: 'render of the inside of a room, showing stairs, windows, tables, stool, a plant',
   },
 
   {
     title: 'Older projects',
     bigImage: lilibricoleImage,
     linkA11y: '',
-    presentation: (
+    description: (
       <>
         <strong>PHP/Mysql projects, Javascript, Front end and Back end creations.</strong> Customer
         space, media validation application for customer relationships, online shops, etc.
       </>
     ),
     tags: '#PHP #Mysql #Autonomous #Javascript #CSS #XHTML',
-    smallImage: lilibricoleImage,
+    image: lilibricoleImage,
+    imageAlt: 'screenshot of a "do it yourself" training website from my old porfolio of projects',
   },
 ];
 
