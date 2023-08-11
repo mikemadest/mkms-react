@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import {FormattedMessage} from 'react-intl';
+import { FormattedMessage } from 'react-intl';
 import Article from './Article';
 import ArticleType from './article.type';
 
-const Section = props => {
-  const {items, isSmall, titleId, id} = props;
+const Section = (props) => {
+  const { items, isSmall, titleId, id } = props;
   const itemClassName = isSmall ? 'small-row' : 'normal-row';
 
   return (
@@ -14,7 +14,7 @@ const Section = props => {
       </h2>
 
       <div className={itemClassName}>
-        {items.map(article => {
+        {items.map((article) => {
           const points = article.points?.split('|') || null;
           return (
             <Article
@@ -37,14 +37,14 @@ const Section = props => {
 };
 
 Section.defaultProps = {
-  isSmall: false,
+  isSmall: false
 };
 
 Section.propTypes = {
   id: PropTypes.string.isRequired,
   titleId: PropTypes.string.isRequired,
   isSmall: PropTypes.bool,
-  items: PropTypes.arrayOf(PropTypes.shape({...ArticleType, points: PropTypes.string})),
+  items: PropTypes.arrayOf(PropTypes.shape({ ...ArticleType, points: PropTypes.string }))
 };
 
 export default Section;

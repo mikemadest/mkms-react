@@ -1,4 +1,4 @@
-import {IntlProvider, useIntl} from 'react-intl';
+import { IntlProvider, useIntl } from 'react-intl';
 import getTranslations from './lang';
 import getContents from './config';
 import PageHeader from './components/PageHeader';
@@ -8,8 +8,8 @@ import About from './components/About';
 import Footer from './components/Footer';
 
 function App() {
-  const {locale} = useIntl();
-  const {mediumArticles, recentWorks, olderWorks} = getContents(locale);
+  const { locale } = useIntl();
+  const { mediumArticles, recentWorks, olderWorks } = getContents(locale);
   return (
     <>
       <PageHeader />

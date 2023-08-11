@@ -10,19 +10,19 @@ import expoJSImage from './assets/recentwork/expojs-dashboard.jpg';
 import hmhcoImage from './assets/recentwork/hmhco-solution.jpg';
 import flakinessArticleImage from './assets/articles/medium-article-flakiness3.jpg';
 import linkedomArticleImage from './assets/articles/medium-article-linkedom3.jpg';
-import {faAddressCard, faLaptopCode} from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 const menu = [
   {
     link: '#about',
     label: 'About',
-    icon: faAddressCard,
+    icon: faAddressCard
   },
   {
     link: '#recent-work',
     label: 'Recent work',
-    icon: faLaptopCode,
-  },
+    icon: faLaptopCode
+  }
 ];
 
 const skills = [
@@ -30,7 +30,7 @@ const skills = [
   ['Back-end', 'Node.js, PHP, MYSQL, Zend Framework'],
   ['Testing Frameworks', 'React Testing Library, Jest, MSW, Codecept, Selenium'],
   ['Build Tools / CI / CD', 'Webpack, Jenkins, Concourse, Docker'],
-  ['Team player', 'Team Collaboration, Mentoring, Code Reviews'],
+  ['Team player', 'Team Collaboration, Mentoring, Code Reviews']
 ];
 
 const mediumArticles = [
@@ -45,7 +45,7 @@ const mediumArticles = [
     tags: '#Jest #ReactJS #Jenkins #NodeJS #ReactTestingLibrary',
     points:
       'created documentation to help developers|Created a custom Jest reporter|Jenkins script to rerun failed tests',
-    image: flakinessArticleImage,
+    image: flakinessArticleImage
   },
 
   {
@@ -59,8 +59,8 @@ const mediumArticles = [
     tags: '#Jest #JSDOM #LinkeDOM #NodeJS #ReactTestingLibrary',
     points:
       'setting realistic goals for a spike|investigating complex issues|making pull request for LinkeDOM and NodeJS',
-    image: linkedomArticleImage,
-  },
+    image: linkedomArticleImage
+  }
 ];
 
 const recentWorks = [
@@ -73,7 +73,7 @@ const recentWorks = [
     tags: '#ReactJs #ES6 #Jenkins #NodeJS #MaterialUI #Codecept #singleSPA #Lerna',
     points:
       'Migrated angular 1.x applications to React|Created ReactJS applications and components in monorepo|Active code reviewer|Proposed and develop solutions for improving tests stability|Ensured compliance with accessibility requirements (WCAG 2.1 AA)',
-    image: hmhcoImage,
+    image: hmhcoImage
   },
 
   {
@@ -84,7 +84,7 @@ const recentWorks = [
     imageAlt: 'screenshot of the ExpoJS dashboard, showing package cards, navigation and search',
     points:
       'Use Babel parser to analyse JS content|take 7 seconds to scans more than 150 packages|Build documentation|Link to github sources and commits|Suggestions for Package improvements|Hackathon project',
-    image: expoJSImage,
+    image: expoJSImage
   },
 
   {
@@ -96,7 +96,7 @@ const recentWorks = [
       'Proposed and implemented php code architecture, model, coding|Created 360° viewer and ThreeJS/WebGL components for real time rendering|Recognized efficiency, quality control and management of the team|Managed massive gain in media processing with automation scripts|Created a how-to manual, handled junior training',
     image: workConfiguratorImage,
     imageAlt:
-      'animated gif showing a room in 360 view with a user changing the floor covering in real time',
+      'animated gif showing a room in 360 view with a user changing the floor covering in real time'
   },
   {
     title: 'Player 3d',
@@ -107,8 +107,8 @@ const recentWorks = [
       '80% faster display and ready for interaction|More responsive control and reworked inertia simulation|Improved code readability, refactored into 4 smaller single purpose classes|Gave autonomy to the teams using it with extensive API documentation, examples and test cases',
     image: workPlayerImage,
     imageAlt:
-      'animated gif showing a building surrounded by snow rotating and user hovering accomodations active zones, revealing details on them',
-  },
+      'animated gif showing a building surrounded by snow rotating and user hovering accomodations active zones, revealing details on them'
+  }
 ];
 
 const olderWorks = [
@@ -117,7 +117,7 @@ const olderWorks = [
     description: 'A real estate ERP with CRM module, calendar tool, chat and highly customizable.',
     tags: '#PHP #Mysql #ZendFramework #Javascript #Bootstrap #ProjectManager',
     image: immodeskImage,
-    imageAlt: 'image showing immodesk dashboard',
+    imageAlt: 'image showing immodesk dashboard'
   },
 
   {
@@ -128,7 +128,7 @@ const olderWorks = [
     description: 'Experiment creating a zelda type game using Phaser.',
     tags: '#Javascript #ES6 #Webpack #Phaser3 #Game',
     image: witchImage,
-    imageAlt: 'screenshot of the game, showing characters in a retro Zelda style village',
+    imageAlt: 'screenshot of the game, showing characters in a retro Zelda style village'
   },
 
   {
@@ -139,7 +139,7 @@ const olderWorks = [
     description: 'HTML5 game sources and project management',
     tags: '#Javascript #ES6 #Git',
     image: githubImage,
-    imageAlt: 'Screenshot of a github page',
+    imageAlt: 'Screenshot of a github page'
   },
 
   {
@@ -151,7 +151,7 @@ const olderWorks = [
     tags: '#Javascript #ES6',
     image: codewarsImage,
     imageAlt:
-      'Screenshot of a page of Codewars, a website where people can work on interesting development "puzzles"',
+      'Screenshot of a page of Codewars, a website where people can work on interesting development "puzzles"'
   },
 
   {
@@ -162,7 +162,7 @@ const olderWorks = [
     description: 'Learning 3d modeling and creating real time demo with ThreeJS.',
     tags: '#Javascript #ThreeJS #Blender #Adaptability',
     image: blenderImage,
-    imageAlt: 'render of the inside of a room, showing stairs, windows, tables, stool, a plant',
+    imageAlt: 'render of the inside of a room, showing stairs, windows, tables, stool, a plant'
   },
 
   {
@@ -177,8 +177,8 @@ const olderWorks = [
     ),
     tags: '#PHP #Mysql #Autonomous #Javascript #CSS #XHTML',
     image: lilibricoleImage,
-    imageAlt: 'screenshot of a "do it yourself" training website from my old porfolio of projects',
-  },
+    imageAlt: 'screenshot of a "do it yourself" training website from my old porfolio of projects'
+  }
 ];
 
-export default {menu, skills, mediumArticles, recentWorks, olderWorks};
+export default { menu, skills, mediumArticles, recentWorks, olderWorks };

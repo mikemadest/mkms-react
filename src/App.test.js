@@ -1,4 +1,4 @@
-import {render, screen, cleanup, within, fireEvent} from '@testing-library/react/pure';
+import { render, screen, cleanup, within, fireEvent } from '@testing-library/react/pure';
 import App from './App';
 
 describe('MKMS main and currently only page', () => {
@@ -12,7 +12,7 @@ describe('MKMS main and currently only page', () => {
 
     // this should not be the french version
     expect(
-      screen.queryByRole('heading', {name: "Les 4 étapes de l'instabilité"})
+      screen.queryByRole('heading', { name: "Les 4 étapes de l'instabilité" })
     ).not.toBeInTheDocument();
   });
 
@@ -20,19 +20,19 @@ describe('MKMS main and currently only page', () => {
     const navigation = screen.getByRole('navigation');
     expect(within(navigation).getAllByRole('link').length).toBe(4);
     expect(
-      within(navigation).getByRole('link', {name: 'About', href: '#about'})
+      within(navigation).getByRole('link', { name: 'About', href: '#about' })
     ).toBeInTheDocument();
     expect(
-      within(navigation).getByRole('link', {name: 'Recent work', href: '#recent-work'})
+      within(navigation).getByRole('link', { name: 'Recent work', href: '#recent-work' })
     ).toBeInTheDocument();
     expect(
       within(navigation).getByRole('link', {
         name: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/mickael-meausoone-webdeveloper/?locale=en_US',
+        href: 'https://www.linkedin.com/in/mickael-meausoone-webdeveloper/?locale=en_US'
       })
     ).toBeInTheDocument();
     expect(
-      within(navigation).getByRole('link', {name: 'Français', href: '/fr'})
+      within(navigation).getByRole('link', { name: 'Français', href: '/fr' })
     ).toBeInTheDocument();
   });
 
@@ -44,20 +44,20 @@ describe('MKMS main and currently only page', () => {
     expect(
       selectedArticle.getByRole('link', {
         name: 'View article',
-        href: exampleLink,
+        href: exampleLink
       })
     ).toBeInTheDocument();
 
     expect(
       selectedArticle.getByRole('link', {
         name: 'Illustration for Medium article on LinkeDOM showing a wooden astronaut surrounded by nature',
-        href: exampleLink,
+        href: exampleLink
       })
     ).toBeInTheDocument();
 
     expect(selectedArticle.getByRole('img')).toBeInTheDocument();
     expect(
-      selectedArticle.getByRole('heading', {name: 'Using LinkeDOM as test environment'})
+      selectedArticle.getByRole('heading', { name: 'Using LinkeDOM as test environment' })
     ).toBeInTheDocument();
 
     expect(selectedArticle.getAllByRole('listitem').length).toBe(3);
@@ -80,7 +80,7 @@ describe('MKMS french version', () => {
   it('renders page with french content', () => {
     render(<App />);
     expect(
-      screen.getByRole('heading', {name: "Les 4 étapes de l'instabilité"})
+      screen.getByRole('heading', { name: "Les 4 étapes de l'instabilité" })
     ).toBeInTheDocument();
   });
 });

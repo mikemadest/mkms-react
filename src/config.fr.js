@@ -10,19 +10,19 @@ import expoJSImage from './assets/recentwork/expojs-dashboard.jpg';
 import hmhcoImage from './assets/recentwork/hmhco-solution.jpg';
 import flakinessArticleImage from './assets/articles/medium-article-flakiness3.jpg';
 import linkedomArticleImage from './assets/articles/medium-article-linkedom3.jpg';
-import {faAddressCard, faLaptopCode} from '@fortawesome/free-solid-svg-icons';
+import { faAddressCard, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 const menu = [
   {
     link: '#about',
     label: 'A propos',
-    icon: faAddressCard,
+    icon: faAddressCard
   },
   {
     link: '#recent-work',
     label: 'Porfolio',
-    icon: faLaptopCode,
-  },
+    icon: faLaptopCode
+  }
 ];
 
 const skills = [
@@ -30,7 +30,7 @@ const skills = [
   ['Back-end', 'Node.js, PHP, MYSQL, Zend Framework'],
   ['Testing Frameworks', 'React Testing Library, Jest, MSW, Codecept, Selenium'],
   ['CI / CD', 'Webpack, Jenkins, Concourse, Docker'],
-  ['En équipe', "Force de proposition, passionné, gestion d'équipe, autonome, revues de code"],
+  ['En équipe', "Force de proposition, passionné, gestion d'équipe, autonome, revues de code"]
 ];
 
 const mediumArticles = [
@@ -46,7 +46,7 @@ const mediumArticles = [
       "Création d'une documentation en support des développeurs|Raporteur d'erreur personalisé pour Jest|Exécuter uniquement les tests en échec avec Jenkins",
     image: flakinessArticleImage,
     imageAlt:
-      "Illustration de l'article Medium sur la stabilité des tests unitaires montrant une main géante attrapant un pont",
+      "Illustration de l'article Medium sur la stabilité des tests unitaires montrant une main géante attrapant un pont"
   },
 
   {
@@ -61,8 +61,8 @@ const mediumArticles = [
       'Définir des objectifs réalistes|résoudre des problèmes sur une problématique complexe|Création de Pull Request LinkeDOM and NodeJS',
     image: linkedomArticleImage,
     imageAlt:
-      "Illustration de l'article Medium sur LinkeDOM montrant un astronaute en bois au milieu d'un paysage montagneux",
-  },
+      "Illustration de l'article Medium sur LinkeDOM montrant un astronaute en bois au milieu d'un paysage montagneux"
+  }
 ];
 
 const recentWorks = [
@@ -77,7 +77,7 @@ const recentWorks = [
     points:
       "Migration d'applications angular 1.x vers React|Auteur de nombreuses applications et composants sur le mono repo|Revue de code|Amélioration de la stabilité des tests unitaires sur le pipeline Jenkins|Respect des règles d'accessibilité des contenus Web WCAG 2.1 AA",
     image: hmhcoImage,
-    imageAlt: "Illustration montrant la structure d'une page du site HMH",
+    imageAlt: "Illustration montrant la structure d'une page du site HMH"
   },
 
   {
@@ -89,7 +89,7 @@ const recentWorks = [
       "Sources Javascript lues avec Babel Parser|Analyse de plus de 150 packages en moins de 7 secondes|Affiche une documentation des packages| Liens avec Github vers les sources et commits|Suggestions pour l'amélioration des Packages|Projet Hackathon",
     image: expoJSImage,
     imageAlt:
-      "photo d'écran du tableau de bord ExpoJS montrant des cartes pour les packages, la navigation et la recherche",
+      "photo d'écran du tableau de bord ExpoJS montrant des cartes pour les packages, la navigation et la recherche"
   },
   {
     title: 'Configurateurs immobilier',
@@ -100,7 +100,7 @@ const recentWorks = [
       "Mise en place du modèle, architecture de code et implémentation en PHP|Création d'un lecteur de visite virtuelle en HTML5 et de composants ThreeJS/WebGL pour le rendu temps réel|Création des outils javascript et gestion des échanges avec l'équipe 3d|Efficacité et contrôle qualité reconnus, gestion de l'équipe|Création de scripts pour une automatisation de la production des médias 3d|Documentation du projet et formation des juniors",
     image: workConfiguratorImage,
     imageAlt:
-      'gif animé montrant une pièce en 360 degrés avec un utilisateur changeant le revêtement de sol en temps réel',
+      'gif animé montrant une pièce en 360 degrés avec un utilisateur changeant le revêtement de sol en temps réel'
   },
   {
     title: 'Player 3d',
@@ -111,8 +111,8 @@ const recentWorks = [
       "Gain de 80% sur la vitesse d'affichage et la disponibilité|Meilleure réactivité globale et réécriture de la simulation d'inertie|Amélioration de la lisibilité du code : séparation en 4 classes à responsabilité unique|Documentation de l'API et exemples",
     image: workPlayerImage,
     imageAlt:
-      'gif animé montrant un immeuble tournant, entouré de neige avec un utilisateur déplaçant la souris au dessus de zones interactive, découvrant des détails sur les logements',
-  },
+      'gif animé montrant un immeuble tournant, entouré de neige avec un utilisateur déplaçant la souris au dessus de zones interactive, découvrant des détails sur les logements'
+  }
 ];
 
 const olderWorks = [
@@ -122,7 +122,7 @@ const olderWorks = [
       'ERP Immobilier incluant une CRM, un agenda, un chat et personalisable selon les besoins du client.',
     tags: '#PHP #Mysql #ZendFramework #Javascript #Bootstrap #ProjectManager',
     image: immodeskImage,
-    imageAlt: 'exemple de tableau de bord Immodesk',
+    imageAlt: 'exemple de tableau de bord Immodesk'
   },
 
   {
@@ -133,7 +133,7 @@ const olderWorks = [
     description: "Démo d'un jeux de type RPG",
     tags: '#Javascript #ES6 #Webpack #Phaser3 #Game',
     image: witchImage,
-    imageAlt: "photo d'écran du jeu, montrant des personages dans un village de type rétro Zelda",
+    imageAlt: "photo d'écran du jeu, montrant des personages dans un village de type rétro Zelda"
   },
 
   {
@@ -144,7 +144,7 @@ const olderWorks = [
     description: 'Sources du jeu HTML5 et gestion de projet sur Git',
     tags: '#Javascript #ES6 #Git',
     image: githubImage,
-    imageAlt: "photo d'écran d'une page de Github",
+    imageAlt: "photo d'écran d'une page de Github"
   },
 
   {
@@ -156,7 +156,7 @@ const olderWorks = [
     tags: '#Javascript #ES6',
     image: codewarsImage,
     imageAlt:
-      "photo décran de Codewars, un site permettant de s'entrainer au développement sur des problèmes de difficultés variables",
+      "photo décran de Codewars, un site permettant de s'entrainer au développement sur des problèmes de difficultés variables"
   },
 
   {
@@ -168,7 +168,7 @@ const olderWorks = [
     tags: '#Javascript #ThreeJS #Blender #Adaptability',
     image: blenderImage,
     imageAlt:
-      "rendu blender de lintérieur d'une pièce montrant des fenêtres, des escaliers, une table basse, plante et tabouret",
+      "rendu blender de lintérieur d'une pièce montrant des fenêtres, des escaliers, une table basse, plante et tabouret"
   },
 
   {
@@ -184,8 +184,8 @@ const olderWorks = [
     ),
     tags: '#PHP #Mysql #Autonomous #Javascript #CSS #XHTML',
     image: lilibricoleImage,
-    imageAlt: "photo d'écran d'un site de cours de bricolage, exemple de mon ancien porfolio",
-  },
+    imageAlt: "photo d'écran d'un site de cours de bricolage, exemple de mon ancien porfolio"
+  }
 ];
 
-export default {menu, skills, mediumArticles, recentWorks, olderWorks};
+export default { menu, skills, mediumArticles, recentWorks, olderWorks };

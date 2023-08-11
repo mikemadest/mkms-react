@@ -1,9 +1,9 @@
-import {useIntl} from 'react-intl';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLanguage} from '@fortawesome/free-solid-svg-icons';
+import { useIntl } from 'react-intl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 
 const LanguageSelector = () => {
-  const {locale} = useIntl();
+  const { locale } = useIntl();
   return (
     <div className="language-selector">
       <FontAwesomeIcon icon={faLanguage} />

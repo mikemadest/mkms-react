@@ -1,6 +1,6 @@
-import {FormattedMessage} from 'react-intl';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { FormattedMessage } from 'react-intl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (

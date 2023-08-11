@@ -8,6 +8,6 @@ const ArticleType = {
   tags: PropTypes.string.isRequired,
   points: PropTypes.arrayOf(PropTypes.string),
   buttonLabel: PropTypes.string,
-  isSmall: PropTypes.bool,
+  isSmall: PropTypes.bool
 };
 export default ArticleType;

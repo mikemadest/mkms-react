@@ -1,14 +1,14 @@
-import {useState, useEffect} from 'react';
-import {useIntl} from 'react-intl';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { useState, useEffect } from 'react';
+import { useIntl } from 'react-intl';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import getContents from '../config';
 import LanguageSelector from './LanguageSelector';
 
 const PageHeader = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const {locale} = useIntl();
-  const {menu} = getContents(locale);
+  const { locale } = useIntl();
+  const { menu } = getContents(locale);
 
   const onScroll = () => {
     if (window.scrollY > 40) {
@@ -20,7 +20,7 @@ const PageHeader = () => {
 
   useEffect(() => {
     // setting up event listeners
-    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('scroll', onScroll, { passive: true });
 
     // cleanup on unmount
     return () => {
@@ -36,7 +36,7 @@ const PageHeader = () => {
 
       <nav>
         <ul>
-          {menu.map(item => (
+          {menu.map((item) => (
             <li key={item.link} className="menu-item">
               <a href={item.link}>
                 <FontAwesomeIcon icon={item.icon} />
